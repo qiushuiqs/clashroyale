@@ -5,6 +5,8 @@
 import sys
 import requests
 import json
+import os
+
 from datetime import datetime
 
 endpoint = 'https://api.clashroyale.com/v1/players/{playerTag}'
@@ -14,7 +16,10 @@ headers = {
     'cache-control': "no-cache",
     }
 
+
 player = sys.argv[1]
+writepath = '/home/pi/data/clash_royale/' + player
+
 player_escape = '%23' + player
 ed = endpoint.replace('{playerTag}', player_escape)
 response = requests.request("GET", ed, headers=headers)
@@ -43,18 +48,16 @@ content = (str(lengendary) + ',' + str(lengendary_cards*level_count[5] - lengend
         str(epic) + ',' + str(epic_cards*level_count[8] - epic) + ',' + 
         str(rare) + ',' + str(rare_cards*level_count[11] - rare) + ',' +
         str(common) + ',' + str(common_cards*level_count[13] - common))
-        
+
+
+mode = 'a' if os.path.exists(writepath) else 'w'
 
 try:
-    fileIO = open('/home/pi/data/clash_royale/' + player[1:], 'r+')
-    lastLine=","
-    for line in fileIO:
-        lastLine = line
-
-    fileIO.write(datetime.now().strftime("%Y%m%d"))
-    fileIO.write(',')
-    fileIO.write(content + '\n')
-    fileIO.close
+    with open(writepath, mode) as fileIO:
+        fileIO.write(datetime.now().strftime("%Y%m%d"))
+        fileIO.write(',')
+        fileIO.write(content + '\n')
+        fileIO.close
 except NameError as e:
     print e
 except ValueError as e:
