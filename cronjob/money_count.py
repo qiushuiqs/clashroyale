@@ -65,22 +65,20 @@ for card in result['cards']:
         common_cost += deck_cost
         common_cards += 1
 
-content = 'Legen: {0}K, {1}K, {2}% \n'.format((lengendary_cards*category_cost['5'] - lengendary_cost)/1000, lengendary_cost/1000, round((lengendary_cards*category_cost['5'] - lengendary_cost)/float(lengendary_cards*category_cost['5'])*100, 4))
-content += 'Legen: {0}, {1}, {2}% \n'.format(lengendary, lengendary_cards*level_count[5] - lengendary, round(lengendary/float(lengendary_cards*level_count[5])*100, 2))
-content += 'Epics: {0}K, {1}K, {2}% \n'.format((epic_cards*category_cost['8'] - epic_cost)/1000, epic_cost/1000, round((epic_cards*category_cost['8'] - epic_cost)/float(epic_cards*category_cost['8'])*100, 4))
-content += 'Epics: {0}, {1}, {2}% \n'.format(epic, epic_cards*level_count[8] - epic, round(epic/float(epic_cards*level_count[8])*100, 2))
-content += 'Rares: {0}K, {1}K, {2}% \n'.format((rare_cards*category_cost['11'] - rare_cost)/1000, rare_cost/1000, round((rare_cards*category_cost['11'] - rare_cost)/float(rare_cards*category_cost['11'])*100, 4))
-content += 'Epics: {0}, {1}, {2}% \n'.format(rare, rare_cards*level_count[11] - rare, round(rare/float(rare_cards*level_count[11])*100, 2))
-content += 'Commo: {0}K, {1}K, {2}% \n'.format((common_cards*category_cost['13'] - common_cost)/1000, common_cost/1000, round((common_cards*category_cost['13'] - common_cost)/float(common_cards*category_cost['13'])*100, 4))
-content += 'Commo: {0}, {1}, {2}% \n'.format(common, common_cards*level_count[13] - common, round(common/float(common_cards*level_count[13])*100, 2))
-content += 'Total: {0}K, {1}K, {2}%'.format(str((total_cost-cost)/1000), str(cost/1000), str(round((total_cost-cost)/float(total_cost)*100, 4)))
+content = 'Legen, {0}K, {1}K, {2}% \n'.format((lengendary_cards*category_cost['5'] - lengendary_cost)/1000, lengendary_cost/1000, round((lengendary_cards*category_cost['5'] - lengendary_cost)/float(lengendary_cards*category_cost['5'])*100, 4))
+content += 'Legen, {0}, {1}, {2}% \n'.format(lengendary, lengendary_cards*level_count[5] - lengendary, round(lengendary/float(lengendary_cards*level_count[5])*100, 2))
+content += 'Epics, {0}K, {1}K, {2}% \n'.format((epic_cards*category_cost['8'] - epic_cost)/1000, epic_cost/1000, round((epic_cards*category_cost['8'] - epic_cost)/float(epic_cards*category_cost['8'])*100, 4))
+content += 'Epics, {0}, {1}, {2}% \n'.format(epic, epic_cards*level_count[8] - epic, round(epic/float(epic_cards*level_count[8])*100, 2))
+content += 'Rares, {0}K, {1}K, {2}% \n'.format((rare_cards*category_cost['11'] - rare_cost)/1000, rare_cost/1000, round((rare_cards*category_cost['11'] - rare_cost)/float(rare_cards*category_cost['11'])*100, 4))
+content += 'Epics, {0}, {1}, {2}% \n'.format(rare, rare_cards*level_count[11] - rare, round(rare/float(rare_cards*level_count[11])*100, 2))
+content += 'Commo, {0}K, {1}K, {2}% \n'.format((common_cards*category_cost['13'] - common_cost)/1000, common_cost/1000, round((common_cards*category_cost['13'] - common_cost)/float(common_cards*category_cost['13'])*100, 4))
+content += 'Commo, {0}, {1}, {2}% \n'.format(common, common_cards*level_count[13] - common, round(common/float(common_cards*level_count[13])*100, 2))
+content += 'Total, {0}K, {1}K, {2}%'.format(str((total_cost-cost)/1000), str(cost/1000), str(round((total_cost-cost)/float(total_cost)*100, 4)))
 
 mode = 'a' if os.path.exists(writepath) else 'w'
 
 try:
     with open(writepath, mode) as fileIO:
-        fileIO.write(datetime.now().strftime("%Y%m%d"))
-        fileIO.write(',')
         fileIO.write(content + '\n')
         fileIO.close
 except NameError as e:
