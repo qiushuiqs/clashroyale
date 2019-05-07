@@ -7,6 +7,7 @@ import cgi
 import requests
 import sys
 
+
 cgitb.enable()
 print "Content-Type: text/plain;charset=utf-8"
 print
