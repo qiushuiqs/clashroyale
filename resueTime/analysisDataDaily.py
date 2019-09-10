@@ -22,7 +22,10 @@ for line in response.text.splitlines()[1:]:
     content +=  "{0},{1}\n".format(date, ','.join(blocks[1:]))
 print content
 
-mode = 'a' if os.path.exists(writepath) else 'w'
+mode = 'a'
+if not os.path.exists(writepath):
+    mode = 'w'
+    content = "Date,Time Spent (seconds),Number of People,Activity,Category,Productivity\n" + content
 
 try:
     with open(writepath, mode) as fileIO:
