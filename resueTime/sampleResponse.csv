@@ -1,949 +1,118 @@
-{
-    "notes": "data is an array of arrays (rows), column names for rows in row_headers",
-    "row_headers": [
-        "Date",
-        "Time Spent (seconds)",
-        "Number of People",
-        "Activity",
-        "Category",
-        "Productivity"
-    ],
-    "rows": [
-        [
-            "2019-07-02T00:00:00",
-            6151,
-            1,
-            "localhost",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            4057,
-            1,
-            "github.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3591,
-            1,
-            "glassdoor.com",
-            "Employment",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            2729,
-            1,
-            "google.com",
-            "Search",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            1208,
-            1,
-            "Visual Studio Code",
-            "Editing & IDEs",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            1060,
-            1,
-            "postman",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            1058,
-            1,
-            "Adobe Reader",
-            "General Reference & Learning",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            937,
-            1,
-            "outlook.live.com",
-            "Email",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            920,
-            1,
-            "Microsoft Teams",
-            "Instant Message",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            890,
-            1,
-            "portal.azure.com",
-            "Systems Operations",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            748,
-            1,
-            "secure.bankofamerica.com",
-            "Accounting",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            734,
-            1,
-            "who",
-            "Science & Technology",
-            -1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            694,
-            1,
-            "conemu64",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            580,
-            1,
-            "olui2.fs.ml.com",
-            "Accounting",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            536,
-            1,
-            "mint.intuit.com",
-            "Accounting",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            481,
-            1,
-            "Windows Explorer",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            463,
-            1,
-            "MS Word",
-            "Writing",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            447,
-            1,
-            "localhost:8081",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            398,
-            1,
-            "Calendar",
-            "Calendars",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            395,
-            1,
-            "microsoft.sharepoint.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            371,
-            1,
-            "wechat",
-            "Instant Message",
-            -1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            353,
-            1,
-            "youtube.com",
-            "Video",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            338,
-            1,
-            "stackoverflow.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            291,
-            1,
-            "swagger.io",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            284,
-            1,
-            "Mail",
-            "Email",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            253,
-            1,
-            "bing.com",
-            "Search",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            253,
-            1,
-            "immihelp.com",
-            "Legal & Gov't",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            252,
-            1,
-            "microsoft.com",
-            "Engineering & Technology",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            228,
-            1,
-            "OneNote",
-            "Writing",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            221,
-            1,
-            "MS Outlook",
-            "Email",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            218,
-            1,
-            "docs.microsoft.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            195,
-            1,
-            "system idle process",
-            "Other",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            189,
-            1,
-            "microsoftedge",
-            "Browsers",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            182,
-            1,
-            "haoxiongdev.file.core.windows.net",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            173,
-            1,
-            "jsonformatter.curiousconcept.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            161,
-            1,
-            "sports.163.com",
-            "General News & Opinion",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            147,
-            1,
-            "tar",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            136,
-            1,
-            "uscis.gov",
-            "General News & Opinion",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            134,
-            1,
-            "ms.portal.azure.com",
-            "Systems Operations",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            131,
-            1,
-            "chooseyourwaybellevue.icarpool.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            122,
-            1,
-            "163.com",
-            "General News & Opinion",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            105,
-            1,
-            "trello.com",
-            "Project Management",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            105,
-            1,
-            "secure.rezserver.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            99,
-            1,
-            "italki.com",
-            "General Reference & Learning",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            97,
-            1,
-            "developer.mozilla.org",
-            "Engineering & Technology",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            89,
-            1,
-            "Google Chrome",
-            "Browsers",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            81,
-            1,
-            "searchui",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            75,
-            1,
-            "portal.cloudlabs.ai",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            75,
-            1,
-            "msasg.visualstudio.com",
-            "Project Management",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            73,
-            1,
-            "amazon.com",
-            "General Shopping",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            67,
-            1,
-            "goldenkey.travelink.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            66,
-            1,
-            "trackitt.com",
-            "General News & Opinion",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            54,
-            1,
-            "groups.google.com",
-            "General Communication & Scheduling",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            53,
-            1,
-            "tools.ietf.org",
-            "Search",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            44,
-            1,
-            "petstore.swagger.io",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            43,
-            1,
-            "jesperrasmussen.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            42,
-            1,
-            "bankofamerica.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            41,
-            1,
-            "social.msdn.microsoft.com",
-            "General News & Opinion",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            39,
-            1,
-            "editor.swagger.io",
-            "Design & Planning",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            34,
-            1,
-            "msit.delve.office.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            34,
-            1,
-            "cloudlabsai.b2clogin.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            32,
-            1,
-            "Finder",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            31,
-            1,
-            "docs.docker.com",
-            "Engineering & Technology",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            30,
-            1,
-            "loginwindow",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            30,
-            1,
-            "microsoftzoom.luum.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            28,
-            1,
-            "javascript-minifier.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            26,
-            1,
-            "newtab",
-            "Browsers",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            25,
-            1,
-            "windowscentral.com",
-            "Science & Technology",
-            -1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            24,
-            1,
-            "docker for windows",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            22,
-            1,
-            "quora.com",
-            "General Reference & Learning",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            21,
-            1,
-            "wox",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            20,
-            1,
-            "shellexperiencehost",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            20,
-            1,
-            "azure.microsoft.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            19,
-            1,
-            "blogs.msdn.microsoft.com",
-            "General Reference & Learning",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            18,
-            1,
-            "linkedin.com",
-            "Professional Networking",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            17,
-            1,
-            "haoxiongdev.blob.core.windows.net",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            16,
-            1,
-            "merrilledge.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            15,
-            1,
-            "cloudberrylab.com",
-            "Science & Technology",
-            -1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            15,
-            1,
-            "browserling.com",
-            "Quality Assurance",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            13,
-            1,
-            "codefresh.io",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            13,
-            1,
-            "sitepoint.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            13,
-            1,
-            "urbandictionary.com",
-            "Search",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            12,
-            1,
-            "dev.azure.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            12,
-            1,
-            "welcome-win10",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            12,
-            1,
-            "hub.docker.com",
-            "Systems Operations",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            11,
-            1,
-            "npmjs.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            10,
-            1,
-            "homewarranty.firstam.com",
-            "Sales",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            10,
-            1,
-            "urlencoder.org",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            10,
-            1,
-            "id.docker.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            8,
-            1,
-            "cloud.githubusercontent.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            8,
-            1,
-            "accounts.intuit.com",
-            "Accounting",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            8,
-            1,
-            "capitalone.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            7,
-            1,
-            "localhost:8000",
-            "Quality Assurance",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            6,
-            1,
-            "verified.capitalone.com",
-            "Accounting",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            6,
-            1,
-            "i.stack.imgur.com",
-            "Photos",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            6,
-            1,
-            "travelink.com",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            5,
-            1,
-            "access-control-allow-",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            5,
-            1,
-            "hrweb",
-            "Intelligence",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            4,
-            1,
-            "hrprofile.microsoft.com",
-            "Engineering & Technology",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            4,
-            1,
-            "octave.org",
-            "Uncategorized",
-            0
-        ],
-        [
-            "2019-07-02T00:00:00",
-            4,
-            1,
-            "pickerhost",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            4,
-            1,
-            "RunDLL32",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            4,
-            1,
-            "localhost:",
-            "Presentation",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "microsoft-my.sharepoint.com",
-            "General Business",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "msazure.visualstudio.com",
-            "Project Management",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "openwith",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "Command Prompt",
-            "Systems Operations",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "docker.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "support.office.com",
-            "Engineering & Technology",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            3,
-            1,
-            "play.golang.org",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            2,
-            1,
-            "myaccounts.capitalone.com",
-            "Accounting",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            2,
-            1,
-            "blog.sapiensworks.com",
-            "General Reference & Learning",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            2,
-            1,
-            "sharepoint",
-            "General Communication & Scheduling",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            2,
-            1,
-            "raw.githubusercontent.com",
-            "General Software Development",
-            2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            1,
-            1,
-            "acrobat reader",
-            "General Utilities",
-            1
-        ],
-        [
-            "2019-07-02T00:00:00",
-            1,
-            1,
-            "onedrive",
-            "File Sharing",
-            -2
-        ],
-        [
-            "2019-07-02T00:00:00",
-            1,
-            1,
-            "globalprotect",
-            "Uncategorized",
-            0
-        ]
-    ]
-}
+Date,Time Spent (seconds),Number of People,Activity,Category,Productivity
+2019-07-02T00:00:00,6151,1,localhost,General Software Development,2
+2019-07-02T00:00:00,4057,1,github.com,General Software Development,2
+2019-07-02T00:00:00,3591,1,glassdoor.com,Employment,2
+2019-07-02T00:00:00,2729,1,google.com,Search,2
+2019-07-02T00:00:00,1208,1,Visual Studio Code,Editing & IDEs,2
+2019-07-02T00:00:00,1060,1,postman,General Software Development,2
+2019-07-02T00:00:00,1058,1,Adobe Reader,General Reference & Learning,2
+2019-07-02T00:00:00,937,1,outlook.live.com,Email,1
+2019-07-02T00:00:00,920,1,Microsoft Teams,Instant Message,2
+2019-07-02T00:00:00,890,1,portal.azure.com,Systems Operations,2
+2019-07-02T00:00:00,748,1,secure.bankofamerica.com,Accounting,2
+2019-07-02T00:00:00,734,1,who,Science & Technology,-1
+2019-07-02T00:00:00,694,1,conemu64,General Software Development,2
+2019-07-02T00:00:00,580,1,olui2.fs.ml.com,Accounting,2
+2019-07-02T00:00:00,536,1,mint.intuit.com,Accounting,2
+2019-07-02T00:00:00,481,1,Windows Explorer,General Utilities,1
+2019-07-02T00:00:00,463,1,MS Word,Writing,2
+2019-07-02T00:00:00,447,1,localhost:8081,General Software Development,2
+2019-07-02T00:00:00,398,1,Calendar,Calendars,2
+2019-07-02T00:00:00,395,1,microsoft.sharepoint.com,General Business,2
+2019-07-02T00:00:00,371,1,wechat,Instant Message,-1
+2019-07-02T00:00:00,353,1,youtube.com,Video,-2
+2019-07-02T00:00:00,338,1,stackoverflow.com,General Software Development,2
+2019-07-02T00:00:00,291,1,swagger.io,General Software Development,2
+2019-07-02T00:00:00,284,1,Mail,Email,2
+2019-07-02T00:00:00,253,1,bing.com,Search,2
+2019-07-02T00:00:00,253,1,immihelp.com,Legal & Gov't,2
+2019-07-02T00:00:00,252,1,microsoft.com,Engineering & Technology,2
+2019-07-02T00:00:00,228,1,OneNote,Writing,2
+2019-07-02T00:00:00,221,1,MS Outlook,Email,2
+2019-07-02T00:00:00,218,1,docs.microsoft.com,General Software Development,2
+2019-07-02T00:00:00,195,1,system idle process,Other,0
+2019-07-02T00:00:00,189,1,microsoftedge,Browsers,0
+2019-07-02T00:00:00,182,1,haoxiongdev.file.core.windows.net,Uncategorized,0
+2019-07-02T00:00:00,173,1,jsonformatter.curiousconcept.com,General Software Development,2
+2019-07-02T00:00:00,161,1,sports.163.com,General News & Opinion,-2
+2019-07-02T00:00:00,147,1,tar,General Business,2
+2019-07-02T00:00:00,136,1,uscis.gov,General News & Opinion,2
+2019-07-02T00:00:00,134,1,ms.portal.azure.com,Systems Operations,2
+2019-07-02T00:00:00,131,1,chooseyourwaybellevue.icarpool.com,Uncategorized,0
+2019-07-02T00:00:00,122,1,163.com,General News & Opinion,-2
+2019-07-02T00:00:00,105,1,trello.com,Project Management,2
+2019-07-02T00:00:00,105,1,secure.rezserver.com,General Business,2
+2019-07-02T00:00:00,99,1,italki.com,General Reference & Learning,2
+2019-07-02T00:00:00,97,1,developer.mozilla.org,Engineering & Technology,2
+2019-07-02T00:00:00,89,1,Google Chrome,Browsers,0
+2019-07-02T00:00:00,81,1,searchui,General Utilities,1
+2019-07-02T00:00:00,75,1,portal.cloudlabs.ai,Uncategorized,0
+2019-07-02T00:00:00,75,1,msasg.visualstudio.com,Project Management,2
+2019-07-02T00:00:00,73,1,amazon.com,General Shopping,-2
+2019-07-02T00:00:00,67,1,goldenkey.travelink.com,Uncategorized,0
+2019-07-02T00:00:00,66,1,trackitt.com,General News & Opinion,-2
+2019-07-02T00:00:00,54,1,groups.google.com,General Communication & Scheduling,2
+2019-07-02T00:00:00,53,1,tools.ietf.org,Search,2
+2019-07-02T00:00:00,44,1,petstore.swagger.io,General Software Development,2
+2019-07-02T00:00:00,43,1,jesperrasmussen.com,Uncategorized,0
+2019-07-02T00:00:00,42,1,bankofamerica.com,General Business,2
+2019-07-02T00:00:00,41,1,social.msdn.microsoft.com,General News & Opinion,-2
+2019-07-02T00:00:00,39,1,editor.swagger.io,Design & Planning,2
+2019-07-02T00:00:00,34,1,msit.delve.office.com,Uncategorized,0
+2019-07-02T00:00:00,34,1,cloudlabsai.b2clogin.com,Uncategorized,0
+2019-07-02T00:00:00,32,1,Finder,General Utilities,1
+2019-07-02T00:00:00,31,1,docs.docker.com,Engineering & Technology,2
+2019-07-02T00:00:00,30,1,loginwindow,General Utilities,1
+2019-07-02T00:00:00,30,1,microsoftzoom.luum.com,Uncategorized,0
+2019-07-02T00:00:00,28,1,javascript-minifier.com,General Software Development,2
+2019-07-02T00:00:00,26,1,newtab,Browsers,2
+2019-07-02T00:00:00,25,1,windowscentral.com,Science & Technology,-1
+2019-07-02T00:00:00,24,1,docker for windows,General Software Development,2
+2019-07-02T00:00:00,22,1,quora.com,General Reference & Learning,2
+2019-07-02T00:00:00,21,1,wox,General Utilities,1
+2019-07-02T00:00:00,20,1,shellexperiencehost,General Utilities,1
+2019-07-02T00:00:00,20,1,azure.microsoft.com,General Software Development,2
+2019-07-02T00:00:00,19,1,blogs.msdn.microsoft.com,General Reference & Learning,2
+2019-07-02T00:00:00,18,1,linkedin.com,Professional Networking,-2
+2019-07-02T00:00:00,17,1,haoxiongdev.blob.core.windows.net,Uncategorized,0
+2019-07-02T00:00:00,16,1,merrilledge.com,General Business,2
+2019-07-02T00:00:00,15,1,cloudberrylab.com,Science & Technology,-1
+2019-07-02T00:00:00,15,1,browserling.com,Quality Assurance,2
+2019-07-02T00:00:00,13,1,codefresh.io,Uncategorized,0
+2019-07-02T00:00:00,13,1,sitepoint.com,General Software Development,2
+2019-07-02T00:00:00,13,1,urbandictionary.com,Search,2
+2019-07-02T00:00:00,12,1,dev.azure.com,General Business,2
+2019-07-02T00:00:00,12,1,welcome-win10,Uncategorized,0
+2019-07-02T00:00:00,12,1,hub.docker.com,Systems Operations,2
+2019-07-02T00:00:00,11,1,npmjs.com,General Software Development,2
+2019-07-02T00:00:00,10,1,homewarranty.firstam.com,Sales,2
+2019-07-02T00:00:00,10,1,urlencoder.org,Uncategorized,0
+2019-07-02T00:00:00,10,1,id.docker.com,General Software Development,2
+2019-07-02T00:00:00,8,1,cloud.githubusercontent.com,General Software Development,2
+2019-07-02T00:00:00,8,1,accounts.intuit.com,Accounting,2
+2019-07-02T00:00:00,8,1,capitalone.com,General Business,2
+2019-07-02T00:00:00,7,1,localhost:8000,Quality Assurance,2
+2019-07-02T00:00:00,6,1,verified.capitalone.com,Accounting,2
+2019-07-02T00:00:00,6,1,i.stack.imgur.com,Photos,-2
+2019-07-02T00:00:00,6,1,travelink.com,Uncategorized,0
+2019-07-02T00:00:00,5,1,access-control-allow-,Uncategorized,0
+2019-07-02T00:00:00,5,1,hrweb,Intelligence,2
+2019-07-02T00:00:00,4,1,hrprofile.microsoft.com,Engineering & Technology,2
+2019-07-02T00:00:00,4,1,octave.org,Uncategorized,0
+2019-07-02T00:00:00,4,1,pickerhost,General Utilities,1
+2019-07-02T00:00:00,4,1,RunDLL32,General Utilities,1
+2019-07-02T00:00:00,4,1,localhost:,Presentation,2
+2019-07-02T00:00:00,3,1,microsoft-my.sharepoint.com,General Business,2
+2019-07-02T00:00:00,3,1,msazure.visualstudio.com,Project Management,2
+2019-07-02T00:00:00,3,1,openwith,General Utilities,1
+2019-07-02T00:00:00,3,1,Command Prompt,Systems Operations,2
+2019-07-02T00:00:00,3,1,docker.com,General Software Development,2
+2019-07-02T00:00:00,3,1,support.office.com,Engineering & Technology,2
+2019-07-02T00:00:00,3,1,play.golang.org,General Software Development,2
+2019-07-02T00:00:00,2,1,myaccounts.capitalone.com,Accounting,2
+2019-07-02T00:00:00,2,1,blog.sapiensworks.com,General Reference & Learning,2
+2019-07-02T00:00:00,2,1,sharepoint,General Communication & Scheduling,2
+2019-07-02T00:00:00,2,1,raw.githubusercontent.com,General Software Development,2
+2019-07-02T00:00:00,1,1,acrobat reader,General Utilities,1
+2019-07-02T00:00:00,1,1,onedrive,File Sharing,-2
+2019-07-02T00:00:00,1,1,globalprotect,Uncategorized,0
