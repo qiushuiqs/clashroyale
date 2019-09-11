@@ -26,19 +26,19 @@ for line in response.text.splitlines()[1:]:
     content +=  "{0},{1}\n".format(date, u','.join(blocks[1:]).encode('utf-8').strip())
 print content
 
-# mode = 'a'
-# if not os.path.exists(writepath):
-#     mode = 'w'
-#     content = "Date,Time Spent (seconds),Number of People,Activity,Category,Productivity\n" + content
+mode = 'a'
+if not os.path.exists(writepath):
+    mode = 'w'
+    content = "Date,Time Spent (seconds),Number of People,Activity,Category,Productivity\n" + content
 
-# try:
-#     with open(writepath, mode) as fileIO:
-#         fileIO.write(content)
-#         fileIO.close
-# except NameError as e:
-#     print e
-# except ValueError as e:
-#     print e
-# except:
-#     print "Unexpected error:", sys.exc_info()
+try:
+    with open(writepath, mode) as fileIO:
+        fileIO.write(content)
+        fileIO.close
+except NameError as e:
+    print e
+except ValueError as e:
+    print e
+except:
+    print "Unexpected error:", sys.exc_info()
 
