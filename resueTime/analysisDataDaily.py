@@ -9,8 +9,12 @@ from datetime import datetime
 endpoint = 'https://www.rescuetime.com/anapi/data?key=B63ipO0EvRhYBr29VG5JJmqdXrv4ABb4sNWF_7gV&format=csv&resolution_time=day&perspective=interval&'
 
 # 20190702
-date = sys.argv[1]
-dt = datetime.strptime(date, "%Y%m%d")
+if  len(sys.argv) > 1:
+    date = sys.argv[1]
+    dt = datetime.strptime(date, "%Y%m%d")
+else:
+    dt = datetime.now() 
+    date = datetime.strftime(dt, "%Y%m%d")
 writepath = "/home/pi/data/rescuetime/analysisData_{0}".format(dt.year)
 ed = endpoint + 'restrict_begin=' + date
 response = requests.request("GET", ed)
