@@ -19,7 +19,7 @@ for line in response.text.splitlines()[1:]:
     blocks = line.split(',')
     if int(blocks[1]) <= 15:
         continue
-    content +=  "{0},{1}\n".format(date, ','.join(blocks[1:]))
+    content +=  "{0},{1}\n".format(date, u','.join(blocks[1:]).encode('utf-8').strip())
 print content
 
 mode = 'a'
